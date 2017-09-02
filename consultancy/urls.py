@@ -4,10 +4,8 @@ from . import views
 app_name = 'consultancy'
 
 urlpatterns = [
-    # /
-
-    # Page for Alumni to Find Students
-    # /find_student/
-    url(r'^/$', views.find_student, name='find_student'),
+    # The Home page of Non-Emergency Situations
+    # /consulting/
+    url(r'^consulting/$', views.all_consulted, name='all_consulted'),
 
 ]

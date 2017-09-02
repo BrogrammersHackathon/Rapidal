@@ -37,6 +37,12 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'consultancy',
+    'department_view',
+    'Emergency',
+    'hospital_dashboard',
+    'Rapidal',
+    'User_Dashboard',
 ]
 
 MIDDLEWARE = [
@@ -51,10 +57,14 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'Rapidal.urls'
 
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ["Rapidal/templates",],
+
+         # os.path.join(PROJECT_ROOT, 'templates').replace('\\', '/'),
+
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

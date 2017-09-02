@@ -18,15 +18,16 @@ from django.contrib import admin
 from django.conf import settings
 from django.conf.urls.static import static
 from django.contrib.auth import views as auth_views
-from Univnet_Beta import views as core_views
+from Rapidal import views as core_views
 
 urlpatterns = [
-    url(r'^home/$', core_views.home, name='home'),
-    url(r'^login/$', auth_views.login, name='login'),
-    url(r'^logout/$', auth_views.logout, name='logout'),
+    #url(r'^home/$', core_views.home, name='home'),
+    #url(r'^login/$', auth_views.login, name='login'),
+    #url(r'^logout/$', auth_views.logout, name='logout'),
     url(r'^admin/', admin.site.urls),
     url(r'', include('Emergency.urls')),
     url(r'', include('hospital_dashboard.urls')),
     url(r'', include('consultancy.urls')),
     url(r'', include('department_view.urls')),
+    url(r'', include('User_Dashboard.urls')),
 ]

@@ -5,6 +5,6 @@ app_name = 'department_view'
 
 urlpatterns = [
     #For Individual Departments of the Hospital
-    # /find_student/
-    url(r'^/$', views.show_dept_details, name='show_dept_details'),
+    # /hos_dept/
+    url(r'hos_dept^/$', views.show_dept_details , name='show_dept_details'),
 ]
