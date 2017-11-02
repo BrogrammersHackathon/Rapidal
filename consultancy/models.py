@@ -23,6 +23,8 @@ class hospital_price_slab(models.Model):
         return self.slab_name
 
 
+
+
 class department(models.Model):
     department_name=models.CharField(max_length=40)
     doctor_names=models.TextField()
